@@ -33,7 +33,8 @@ public class BST<E> {
 	private Node<E> root;
 	private int size;
 	
-	private final Comparator<? super E> comparator;
+//	private final Comparator<? super E> comparator;
+	private final Comparator comparator;
 
 	/**
 	 * comparator 값이 없는 경우 변수 비교때 comparable을 사용하도록 함
@@ -45,7 +46,8 @@ public class BST<E> {
 	/**
 	 * 사용자가 정렬 방법을 넘겨줄때엔 comparator 를 사용
 	 */
-	public BST(Comparator<? super E> comparator) {
+	public BST(Comparator comparator) {
+//		public BST(Comparator<? super E> comparator) {
 		// TODO Auto-generated constructor stub
 		this.comparator = comparator;
 		this.root = null; //루트노드를 가리키는 변수

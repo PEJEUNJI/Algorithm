@@ -7,7 +7,7 @@ import java.util.Arrays;
  * @param <E>
  */
 
-public class ArrayList<E> implements List<E>{
+public class ArrayList<E> implements List<E>, Cloneable {
 	
 	private static final Object[] EMPTY_ARRAY = {}; //빈배열
 	private static final int DEFAULT_CAPACITY = 10; //최소 (기본)capacity  크기
@@ -223,10 +223,16 @@ public class ArrayList<E> implements List<E>{
 		list.remove(10);
 		list.remove(list.get(0));
 //		list.clear();
+		System.out.println("list");
 		for(int i=0; i < list.size(); i++) {
 			System.out.print(list.get(i) + ",");
 		}
 	
+		System.out.println("\nclonelist");
+		ArrayList<Integer> clonelist = (ArrayList<Integer>)list.clone();
+		for(int i=0; i < clonelist.size(); i++) {
+			System.out.print(clonelist.get(i) + ",");
+		}
 	}
 
 	

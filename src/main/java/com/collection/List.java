@@ -1,5 +1,9 @@
 package com.collection;
-
+/**
+ * 
+ * @author https://st-lab.tistory.com/161
+ *
+ */
 public interface List<E>{
 		boolean add(E value); //리스트에 요소를 추가한다, 중복을 허용하지 않는 리스트의 경우 중복된 요소가 있으면 false 아니면 true
 		void add(int index, E value); //리스트에 요소를 특정 위치에 추가하고, 이후의 요소들은 한칸씩 뒤로 밀림

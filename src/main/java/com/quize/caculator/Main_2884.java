@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 /**
  * 
- * @author https://www.acmicpc.net/problem/2884
+ * @author https://www.acmicpc.net/problem/2884, https://st-lab.tistory.com/24
  *
  */
 
@@ -16,6 +16,7 @@ public class Main_2884 {
 		// TODO Auto-generated method stub
 		BufferedReader br  = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine()," ");
+		br.close();
 		int inputHour = Integer.parseInt(st.nextToken());
 		int inputMinute = Integer.parseInt(st.nextToken());
 		int outputHour, outputMinute;

@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 
 /**
  * 
- * @author https://st-lab.tistory.com/19
+ * @author https://st-lab.tistory.com/19, https://www.acmicpc.net/problem/10430
  *
  */
 public class Main_10430 {
@@ -15,6 +15,7 @@ public class Main_10430 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String str = br.readLine();
+		br.close();
 		StringTokenizer st = new StringTokenizer(str," ");
 		int A = Integer.parseInt(st.nextToken());
 		int B = Integer.parseInt(st.nextToken());

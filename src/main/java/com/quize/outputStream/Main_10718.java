@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 /**
  * 
- * @author https://st-lab.tistory.com/6
+ * @author https://st-lab.tistory.com/6, https://www.acmicpc.net/problem/10718
  *
  */
 
@@ -14,22 +14,17 @@ public class Main_10718 {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		bw.write("°­ÇÑÄ£±¸ ´ëÇÑÀ°±º");
+		bw.write("ê°•í•œì¹œêµ¬ ëŒ€í•œìœ¡êµ°");
 		bw.newLine();
-		bw.write("°­ÇÑÄ£±¸ ´ëÇÑÀ°±º");
+		bw.write("ê°•í•œì¹œêµ¬ ëŒ€í•œìœ¡êµ°");
 		bw.newLine();
 		
 		bw.flush();
 		
 		StringBuilder sb = new StringBuilder();
-		sb.append("°­ÇÑÄ£±¸ ´ëÇÑÀ°±º2\n");
-		sb.append("°­ÇÑÄ£±¸ ´ëÇÑÀ°±º2");
+		sb.append("ê°•í•œì¹œêµ¬ ëŒ€í•œìœ¡êµ°\n");
+		sb.append("ê°•í•œì¹œêµ¬ ëŒ€í•œìœ¡êµ°\n");
 		System.out.println(sb);
-		
-		StringBuffer sb2 = new StringBuffer();//StringBufferÀº µ¿±âÈ­¸¦ Áö¿ø
-		sb2.append("°­ÇÑÄ£±¸ ´ëÇÑÀ°±º3\n");
-		sb2.append("°­ÇÑÄ£±¸ ´ëÇÑÀ°±º3");
-		System.out.println(sb2);
 		
 		bw.close();
 

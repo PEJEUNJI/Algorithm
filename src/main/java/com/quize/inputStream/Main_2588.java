@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 /**
  * 
- * @author https://st-lab.tistory.com/20
+ * @author https://st-lab.tistory.com/20, https://www.acmicpc.net/problem/2588
  *
  */
 public class Main_2588 {

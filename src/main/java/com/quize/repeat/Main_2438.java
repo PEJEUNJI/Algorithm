@@ -3,7 +3,11 @@ package com.quize.repeat;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
+/**
+ * 
+ * @author https://www.acmicpc.net/problem/2438
+ *
+ */
 public class Main_2438 {
 
 	public static void main(String[] args) throws IOException {

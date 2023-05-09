@@ -6,7 +6,7 @@ import java.io.OutputStreamWriter;
 
 /**
  * 
- * @author https://st-lab.tistory.com/8
+ * @author https://st-lab.tistory.com/8, https://www.acmicpc.net/problem/10171
  *
  */
 public class Main_10171 {

@@ -6,11 +6,10 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 /**
- * https://st-lab.tistory.com/25
+ * https://www.acmicpc.net/problem/10817,https://st-lab.tistory.com/25
  */
 public class Main_10817 {
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
 		BufferedReader br  = new BufferedReader(new InputStreamReader(System.in));
 		String str = br.readLine();
 		br.close();

@@ -14,6 +14,7 @@ public class Main_5543 {
 			BugerMin = Math.min(BugerMin,Integer.parseInt(br.readLine()));
 		}
 		System.out.print(Math.min(Integer.parseInt(br.readLine()), Integer.parseInt(br.readLine())) + BugerMin - 50);
+		br.close();
 	}
 
 }

@@ -1,7 +1,7 @@
 package com.quize.outputStream;
 /**
  * 
- * @author https://st-lab.tistory.com/11
+ * @author https://st-lab.tistory.com/11,  https://www.acmicpc.net/problem/10172
  *
  */
 public class Main_10172 {

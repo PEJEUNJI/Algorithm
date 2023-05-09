@@ -15,6 +15,7 @@ public class Main_2439 {
 		// TODO Auto-generated method stub
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(br.readLine());
+		br.close();
 		StringBuilder sb = new StringBuilder();
 		StringBuilder star = new StringBuilder();
 		for (int i = n - 1; i >= 0; i--) {

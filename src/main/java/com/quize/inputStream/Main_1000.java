@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 
 /**
  * 
- * @author https://st-lab.tistory.com/12
+ * @author https://st-lab.tistory.com/12, https://www.acmicpc.net/problem/1000
  *
  */
 public class Main_1000 {
@@ -30,6 +30,7 @@ public class Main_1000 {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String[] str = br.readLine().split(" ");
+		br.close();
 		int a = Integer.parseInt(str[0]);
 		int b = Integer.parseInt(str[1]);
 		System.out.print(a+b);

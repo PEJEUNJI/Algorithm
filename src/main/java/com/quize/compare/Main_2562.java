@@ -23,6 +23,7 @@ public class Main_2562 {
 				order  = i+1;
 			}
 		}
+		br.close();
 		StringBuilder sb = new StringBuilder();
 		sb.append(max).append("\n");
 		sb.append(order).append("\n");

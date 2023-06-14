@@ -1,7 +1,9 @@
 package com.quiz.compare.Q5622;
 
 import java.io.IOException;
-
+/**
+ * @param https://www.acmicpc.net/problem/5622
+ */
 public class Main_5622_v2 {
 
 	public static void main(String[] args) throws IOException {

@@ -3,27 +3,30 @@ package com.quiz.compare;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
+/**
+ * @param https://www.acmicpc.net/problem/2941
+ */
 public class Main_2941 {
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String inputStr = br.readLine();
+		br.close();
 		String[] special = { "c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z=" };
 		int result = 0;
+		int index = 0;
 		int length = inputStr.length();
-		for (int index = 0; index < length;) {
+		
+		while (index < length) {
 			boolean match = false;
 			for (String value : special) {
-				if ((index + 2 <= length) && inputStr.substring(index, index + 2).equals(value)) {
-					index = index + 2;
-					match = true;
-					break;
-				} else if ((index + 3 <= length) && inputStr.substring(index, index + 3).equals(value)) {
-					index = index + 3;
-					match = true;
-					break;
-				}
+				
+				int valueLength = value.length();
+
+			    if (index + valueLength <= length && inputStr.substring(index, index + valueLength).equals(value)) {
+                    index += valueLength;
+                    match = true;
+                    break;
+                }
 			}
 			if (!match) {
 				index++;

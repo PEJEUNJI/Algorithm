@@ -21,6 +21,7 @@ public class Main_2775 {
 			int roomNo = Integer.parseInt(br.readLine());
 			sb.append(apt[floor][roomNo]).append("\n");
 		}
+		br.close();
 		System.out.print(sb);
 	}
 	private static void initApt(int[][] apt) {

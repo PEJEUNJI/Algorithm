@@ -40,7 +40,9 @@ public class Palindrome {
 			int inputTarget = x;
 			int digit = 0;
 			while (inputTarget > 0) {
+				//  divided by 10 to get digit number 
 				digit = inputTarget % 10;
+				// to get convertNum, previous convertNumber * 10 :  ex) 1, 12, 121
 				convertNum = convertNum * 10 + digit;
 				inputTarget = inputTarget / 10;
 			}

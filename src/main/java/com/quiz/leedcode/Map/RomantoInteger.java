@@ -51,7 +51,7 @@ public class RomantoInteger {
 
 	private static int romanToInt(String s) {
 		Map<String, Integer> romanNum = new HashMap<>();
-
+		//put roma numbee and minus rule
 		romanNum.put("I", 1);
 		romanNum.put("V", 5);
 		romanNum.put("X", 10);
@@ -69,9 +69,12 @@ public class RomantoInteger {
 		int resultNum = 0;
 
 		for (int i = 0; i < s.length(); i++) {
+			// to get just one digit  ex) "III" -> I
 			String one_digit = s.substring(i,i+1);
+			// to get two digit when i is more smaller than total length -1 to avoid outofexception
 			String two_digit = i < s.length()-1 ? s.substring(i,i+2) : "";
-            if (romanNum.containsKey(two_digit)) {
+            // if the two_digit is included in a map, it is for minus and i was changed to next value
+			if (romanNum.containsKey(two_digit)) {
 				resultNum = resultNum + romanNum.get(two_digit);
 				i++;
 			} else {

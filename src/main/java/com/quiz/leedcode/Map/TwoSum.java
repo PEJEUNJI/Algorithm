@@ -46,7 +46,7 @@ public class TwoSum {
 		System.out.print("[" + nums[0] + "," + nums[1] + "]");
 	}
 	public static void main(String[] args) {
-		printArray(TwoSum.twoSum(new int[] { 2, 7, 11, 15 }, 9));
+		printArray(twoSum(new int[] { 2, 7, 11, 15 }, 9));
 		// TODO Auto-generated method stub
 
 

@@ -49,7 +49,7 @@ It is guaranteed that s is a valid roman numeral in the range [1, 3999].
  */
 public class RomantoInteger {
 
-	private static int romanToInt(String s) {
+	public static int romanToInt(String s) {
 		Map<String, Integer> romanNum = new HashMap<>();
 		//put roma numbee and minus rule
 		romanNum.put("I", 1);
@@ -87,9 +87,9 @@ public class RomantoInteger {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(RomantoInteger.romanToInt("III"));
-		System.out.println(RomantoInteger.romanToInt("LVIII"));
-		System.out.println(RomantoInteger.romanToInt("MCMXCIV"));
+		System.out.println(romanToInt("III"));
+		System.out.println(romanToInt("LVIII"));
+		System.out.println(romanToInt("MCMXCIV"));
 
 	}
 

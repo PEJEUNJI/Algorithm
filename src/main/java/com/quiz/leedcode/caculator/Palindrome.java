@@ -32,7 +32,7 @@ Follow up: Could you solve it without converting the integer to a string?
  */
 
 public class Palindrome {
-	private static boolean isPalindrome(int x) {
+	public static boolean isPalindrome(int x) {
 		if (x < 0) {
 			return false;
 		} else {
@@ -52,8 +52,8 @@ public class Palindrome {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(Palindrome.isPalindrome(121));
-		System.out.println(Palindrome.isPalindrome(-121));
+		System.out.println(isPalindrome(121));
+		System.out.println(isPalindrome(-121));
 
 	}
 

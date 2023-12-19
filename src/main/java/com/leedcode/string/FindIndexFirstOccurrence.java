@@ -1,13 +1,9 @@
 package com.leedcode.string;
 /*
 28. Find the Index of the First Occurrence in a String
-Easy
-5.2K
-317
 Companies
 Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
 
- 
 
 Example 1:
 
@@ -46,7 +42,8 @@ public class FindIndexFirstOccurrence {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		strStr("", "");
+		System.out.println(strStr("sadbutsad", "sad"));
+		System.out.println(strStr("leetcode", "leeto"));
 	}
 
 }

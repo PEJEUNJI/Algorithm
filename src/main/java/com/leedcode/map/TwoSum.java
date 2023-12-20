@@ -22,33 +22,38 @@ Input: nums = [3,2,4], target = 6
 Output: [1,2]
 */
 
-
 public class TwoSum {
 
 	private static int[] twoSum(int[] nums, int target) {
-		
+
 		Map<Integer, Integer> map = new HashMap();
-		
-		
-		for (int i =0; i < nums.length; i++) {
-			map.put(nums[i],i);
-		}
-		for (int i =0; i < nums.length; i++) {
-			int complement = target - nums[i]; //get another target value
-			if(map.containsKey(complement) && map.get(complement) != i) {
-				return new int[] {i, map.get(complement)};
+		int len = nums.length;
+		//return indices of the two numbers, so ouput array length is 2
+		int[] output = new int[2];
+		for (int i = 0; i < len; i++) {
+			int gap = target - nums[i]; // get another target value
+			// if map contain gap by key
+			if (map.containsKey(gap) ) {
+				// value is index
+				output[0] = map.get(gap);
+				output[1] = i;
+				return output;
 			}
-		}	
-		
-		return null;
+			// it map doesn't contain gap, put it for next step.
+			map.put(nums[i], i);
+		}
+
+		return output;
 	}
+
+	
 	private static void printArray(int[] nums) {
 		System.out.print("[" + nums[0] + "," + nums[1] + "]");
 	}
-	public static void main(String[] args) {
-		printArray(twoSum(new int[] { 2, 7, 11, 15 }, 9));
-		// TODO Auto-generated method stub
 
+	public static void main(String[] args) {
+		printArray(twoSum(new int[] { 3, 3 }, 6));
+		// TODO Auto-generated method stub
 
 	}
 
